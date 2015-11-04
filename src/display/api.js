@@ -128,14 +128,14 @@ PDFJS.disableWebGL = (PDFJS.disableWebGL === undefined ?
  * @var {boolean}
  */
 PDFJS.disableDownload = (PDFJS.disableDownload === undefined ?
-                        false : PDFJS.disableDownload);
+                        true : PDFJS.disableDownload);
 
 /**
  * Disable the print function.
  * @var {boolean}
  */
 PDFJS.disablePrinting = (PDFJS.disablePrinting === undefined ?
-                        false : PDFJS.disablePrinting);
+                        true : PDFJS.disablePrinting);
 
 
 /**
@@ -143,14 +143,14 @@ PDFJS.disablePrinting = (PDFJS.disablePrinting === undefined ?
  * @var {boolean}
  */
 PDFJS.disableOpenFile = (PDFJS.disableOpenFile === undefined ?
-                        false : PDFJS.disableOpenFile);
+                        true : PDFJS.disableOpenFile);
 
 /**
  * Disable the showProperties function.
  * @var {boolean}
  */
 PDFJS.disableShowProperties = (PDFJS.disableShowProperties === undefined ?
-                              false : PDFJS.disableShowProperties);
+                              true : PDFJS.disableShowProperties);
 
 /**
  * Disables the textSelection function.
@@ -164,7 +164,7 @@ PDFJS.disableSearch = (PDFJS.disableSearch === undefined ?
  * @var {boolean}
  */
 PDFJS.disablePresentationMode = (PDFJS.disablePresentationMode === undefined ?
-                                false : PDFJS.disabelPresentationMode);
+                                true : PDFJS.disabelPresentationMode);
 
 /**
  * Forces the HandTool to be active.

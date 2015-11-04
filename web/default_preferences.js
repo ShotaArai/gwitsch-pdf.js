@@ -31,7 +31,7 @@ var DEFAULT_PREFERENCES = {
 //disableTextLayer: true,
 //useOnlyCssZoom: true
 //#else
-  disableTextLayer: false,
+  disableTextLayer: true,
   useOnlyCssZoom: false
 //#endif
 };

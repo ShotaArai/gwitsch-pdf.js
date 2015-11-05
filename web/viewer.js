@@ -26,7 +26,7 @@
 
 var DEFAULT_URL = 'compressed.tracemonkey-pldi-09.pdf';
 var DEFAULT_SCALE = 'auto';
-var DEFAULT_SCALE_DELTA = 1.1;
+var DEFAULT_SCALE_DELTA = 1.5;
 var UNKNOWN_SCALE = 0;
 var CACHE_SIZE = 10;
 var CSS_UNITS = 96.0 / 72.0;
@@ -544,7 +544,7 @@ var PDFView = {
         return;
       }
       switch (args.pdfjsLoadAction) {
-        case 'supportsRangedLoading':
+        case 'supportsRangedLoading'
           PDFView.open(args.pdfUrl, 0, undefined, pdfDataRangeTransport, {
             length: args.length,
             initialData: args.data
@@ -1976,6 +1976,11 @@ function webViewerInitialized() {
       if (this.value !== (this.value | 0).toString()) {
         this.value = PDFView.page;
       }
+    });
+
+  document.getElementById('pageAutoBtn').addEventListener('click',
+    function() {
+      PDFView.setScale("auto");
     });
 
   document.getElementById('scaleSelect').addEventListener('change',

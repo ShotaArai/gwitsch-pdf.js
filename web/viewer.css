@@ -1968,3 +1968,11 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   }
 }
 
+#pageAutoBtn {
+    margin: 3px 2px 4px 0;
+    padding: 3px 2px 2px;
+    min-width: 140px;
+    font-size: 12px;
+    color: hsl(0,0%,95%);
+    background: rgba(0,0,0,0);
+}

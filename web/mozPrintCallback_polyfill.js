@@ -102,7 +102,7 @@
     // Also intercept Cmd/Ctrl + Shift + P in Chrome and Opera
     if (event.keyCode === 80/*P*/ && (event.ctrlKey || event.metaKey) &&
         !event.altKey && (!event.shiftKey || window.chrome || window.opera)) {
-      window.print();
+      //window.print();
       if (hasAttachEvent) {
         // Only attachEvent can cancel Ctrl + P dialog in IE <=10
         // attachEvent is gone in IE11, so the dialog will re-appear in IE11.

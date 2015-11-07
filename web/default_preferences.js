@@ -19,7 +19,7 @@
 'use strict';
 
 var DEFAULT_PREFERENCES = {
-  showPreviousViewOnLoad: true,
+  showPreviousViewOnLoad: false,
   defaultZoomValue: '',
   sidebarViewOnLoad: 0,
   enableHandToolOnLoad: false,

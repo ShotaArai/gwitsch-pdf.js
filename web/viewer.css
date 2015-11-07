@@ -269,7 +269,7 @@ html[dir='rtl'] #viewerContainer {
   position: relative;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 1;
   cursor: default;
 }
 
@@ -379,7 +379,7 @@ html[dir='rtl'] #toolbarContainer, .findbar, .secondaryToolbar {
 .findbar, .secondaryToolbar {
   top: 32px;
   position: absolute;
-  z-index: 10000;
+  z-index: 9998;
   height: 32px;
 
   min-width: 16px;
@@ -414,7 +414,7 @@ html[dir='rtl'] .findbar {
 .secondaryToolbar {
   padding: 6px;
   height: auto;
-  z-index: 30000;
+  z-index: 9998;
 }
 html[dir='ltr'] .secondaryToolbar {
   right: 4px;
@@ -1631,7 +1631,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 50000; /* should be higher than anything else in PDF.js! */
+  z-index: 40000; /* should be higher than anything else in PDF.js! */
 }
 
 @page {
